@@ -22,3 +22,31 @@ imports: [
 Not: eğer app.module'da importlar otomatik yapılmazsa
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+
+Örnek kullanım şekli:
+
+ constructor(
+    private _toastr: ToastrService
+  ) { }
+
+  ngOnInit(): void {
+  }
+
+  toastrGoster(name: string){
+    if (name == "success") {
+      this._toastr.success("Başarılı mesajı gösterildi", "Başarılı")
+    }
+
+    if (name == "warning") {
+      this._toastr.warning("Uyarı mesajı gösterildi", "Uyarı")
+    }
+
+    if (name == "info") {
+      this._toastr.info("Bilgilendirme mesajı gösterildi", "Bilgilendirme")
+    }
+
+    if (name == "error") {
+      this._toastr.error("Hata mesajı gösterildi", "Hata")
+    }
+    
+  }
