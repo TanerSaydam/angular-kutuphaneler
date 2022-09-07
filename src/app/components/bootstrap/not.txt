@@ -1,0 +1,9 @@
+Kurulum Kodu: npm install bootstrap
+Not: Bu paket Bootstrap style dosyasını node_modules klasörüne indirir. 
+Bu sayede biz bunu angular.json dosyasında Style kısmına css olarak tanıtarak 
+uygulamamıza Bootstrap style dosyalarını tanıtmış oluyoruz.
+
+Örnek Tanıtımı (angular.json dosyasına):
+"styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+],

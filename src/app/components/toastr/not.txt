@@ -1,0 +1,3 @@
+Kurulum Kodları:
+1) npm install ngx-toastr --save
+2) npm install @angular/animations --save 
