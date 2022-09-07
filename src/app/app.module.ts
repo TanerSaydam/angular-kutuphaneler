@@ -4,8 +4,8 @@ import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { ToastrComponent } from './components/toastr/toastr.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
 import { RouterModule, Routes } from '@angular/router';
+import { ToastrModule } from 'ngx-toastr';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes: Routes = [
