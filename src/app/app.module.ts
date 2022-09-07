@@ -9,16 +9,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SweetAlert2Component } from './components/sweet-alert2/sweet-alert2.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: BootstrapComponent
-  },
-  {
-    path: 'toastr',
-    component: ToastrComponent
-  }
-]
+
 
 @NgModule({
   declarations: [
@@ -35,7 +26,22 @@ const routes: Routes = [
       timeOut: 20000,
       progressBar: true
     }), // ToastrModule added,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(
+      [
+        {
+          path: '',
+          component: BootstrapComponent
+        },
+        {
+          path: 'toastr',
+          component: ToastrComponent
+        },
+        {
+          path: 'swal',
+          component: SweetAlert2Component
+        }
+      ]
+    )
   ],
   providers: [],
   bootstrap: [NavbarComponent]
