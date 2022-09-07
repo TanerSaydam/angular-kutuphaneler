@@ -20,7 +20,11 @@ export class SweetAlert2Component implements OnInit {
       toast: true,
        position: 'top-end',
        timer: 3000,
-       timerProgressBar: true
+       timerProgressBar: true,
+       showCancelButton: false,
+       showConfirmButton: false,
+       color: "red",
+       background: "yellow"
      })
      Toast.fire('Something interesting happened', '', 'info')
   }
