@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SweetAlert2Component } from './components/sweet-alert2/sweet-alert2.component';
 
 const routes: Routes = [
   {
@@ -23,10 +24,11 @@ const routes: Routes = [
   declarations: [
     BootstrapComponent,
     ToastrComponent,
-    NavbarComponent,    
+    NavbarComponent,
+    SweetAlert2Component,    
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,    
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot({
       closeButton: true,
