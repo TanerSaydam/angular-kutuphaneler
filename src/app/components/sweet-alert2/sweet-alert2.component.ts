@@ -15,7 +15,7 @@ export class SweetAlert2Component implements OnInit {
   ngOnInit(): void {
   }
 
-  toastCagir(){
+  toastCagir(type: any){
      const Toast = Swal.mixin({
       toast: true,
        position: 'top-end',
@@ -23,10 +23,10 @@ export class SweetAlert2Component implements OnInit {
        timerProgressBar: true,
        showCancelButton: false,
        showConfirmButton: false,
-       color: "red",
-       background: "yellow"
+       //color: "red",
+       //background: "yellow"
      })
-     Toast.fire('Something interesting happened', '', 'info')
+     Toast.fire('Something interesting happened', '', type)
   }
 
 }
