@@ -35,6 +35,9 @@ export class SweetAlert2Component implements OnInit {
       showConfirmButton: true,
       confirmButtonText: btnName,
       text: message,
+      icon: "question",
+      cancelButtonText: "Vazgeç",
+      cancelButtonColor: "red",
       title: title
     });
 
