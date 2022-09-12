@@ -21,3 +21,6 @@ toastCagir(type: any){
      })
      Toast.fire('Something interesting happened', '', type)
   }
+
+
+ 

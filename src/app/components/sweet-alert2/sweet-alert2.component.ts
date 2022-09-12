@@ -29,4 +29,24 @@ export class SweetAlert2Component implements OnInit {
      Toast.fire('Something interesting happened', '', type)
   }
 
+  swalCagir(message: string, title:string, btnName: string){
+    const swal = Swal.fire({
+      showCancelButton: true,
+      showConfirmButton: true,
+      confirmButtonText: btnName,
+      text: message,
+      title: title
+    });
+
+    return swal;
+  }
+
+  delete(){
+    this.swalCagir("Silme işlemini yapmak istiyor musunuz?","Sil?","Sil").then((res)=>{
+      if(res.isConfirmed){
+        console.log("silindi");
+      }      
+    })
+  }
+
 }
